@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darrk: #500f3b;
+    --clarDark: #95204e;
+    --lila: #7d90d9;
+    --rosaPastel: #e2d2ea;
+    --claro: #f3f3f3;
+}
+
+.nuestro-equipo{
+    background-image: url(./img/trainer-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    color: var(--claro);
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.titulo-equipo {
+    color: var(--claro);
+}
+
+.img-tamano {
+    width: 320px;
+    height: 320px;
+    background-color: var(--claro);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.img-box {
+    border-radius: 50%;
+    overflow: hidden;
+}
