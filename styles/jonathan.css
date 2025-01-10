@@ -1,0 +1,93 @@
+/* Navbar Hamburguesa */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    border: none;
+    outline: none; 
+    box-shadow: none;  
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #F14545 !important; 
+    padding: 10px 20px;
+}
+
+.navbar .navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 60px;
+    margin: 0px 10px;
+    color: #ffffff;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #4c0000;
+    /*text-decoration: underline;*/
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #4c0000;
+}
+
+/* Shopping Cart Icon */
+.material-icons {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.navbar .nav-item .nav-link {
+    position: relative;  /* Habilita el posicionamiento relativo para el badge */
+}
+
+/* Estilo para el badge */
+.navbar .nav-item .nav-link .badge {
+    position: absolute;  /* Permite que el badge se posicione sobre el ícono */
+    top: -1px;  /* Ajusta la posición vertical */
+    right: -4px;  /* Ajusta la posición horizontal */
+    padding: 4px 6px;  /* Tamaño del badge */
+    background-color: #00343D;
+    color: #FA7474;  /* Color del texto */
+    border-radius: 50%;  /* Forma circular */
+    font-size: 11px;  /* Tamaño del texto */
+    font-weight: bold;  /* Negrita */
+}
+
+/* Responsive Navbar */
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-item .nav-link {
+        padding: 10px 20px; 
+    }
+}
+@media (max-width: 991px) {
+    .navbar .nav-item .nav-link {
+        padding: 10px 30px;  /* Espaciado ajustado para el menú en responsive */
+    }
+
+    .navbar .nav-item .nav-link .badge {
+        top: -4px;  /* Ajusta la posición para estar más cerca del icono */
+        right: -4px;  /* Ajusta la posición horizontal */
+    }
+}
