@@ -1,0 +1,445 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Navbar Hamburguesa */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    border: none;
+    outline: none; 
+    box-shadow: none;  
+}
+
+/* Navbar*/
+.navbar {
+    background-color: #F14545 !important; 
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar .navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 60px;
+    margin: 0px 10px;
+    color: #ffffff;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #4c0000;
+    /*text-decoration: underline;*/
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #4c0000;
+}
+
+/*Carrito de compras*/
+.material-icons {
+    font-size: 24px;
+    color: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/*Hover carrito*/
+.navbar .nav-item .nav-link:hover .material-icons {
+    color: #4c0000; 
+    transform: scale(1.2);
+}
+
+.navbar .nav-item .nav-link {
+    position: relative;
+}
+
+/*Estilo para el badge*/
+.navbar .nav-item .nav-link .badge {
+    position: absolute;  
+    top: -1px;  
+    right: -4px; 
+    padding: 4px 6px; 
+    background-color: #00343D;
+    color: #FA7474;  
+    border-radius: 50%;  
+    font-size: 11px;  
+    font-weight: bold;  
+}
+
+/*Responsive Navbar*/
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-item .nav-link {
+        padding: 10px 20px; 
+    }
+}
+@media (max-width: 991px) {
+    .navbar .nav-item .nav-link {
+        padding: 10px 30px; 
+    }
+
+    .navbar .nav-item .nav-link .badge {
+        top: -4px;  
+        right: -4px; 
+    }
+}
+
+/* Fin navBar */
+
+/* Carrito de compras pop up */
+/* Pop-up Carrito de compras */
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.popup-content h4 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.popup-content .car-items {
+    margin-bottom: 20px;
+}
+
+.car-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.car-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.car-item p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.car-item span {
+    font-weight: bold;
+}
+
+.total {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popup-content .btn {
+    width: 100%;
+    background-color: #F14545; 
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-content .btn:hover {
+    background-color: #00343D;
+    color: #FA7474;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #F14545;
+}
+/* Fin carrito de compras */
+body {
+    margin-top: 70px;
+}
+
+/* seccion de contactanos, imagen y formulario  */
+#contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #500f3b;
+}
+
+.contact-form h2 {
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-weight: bolder;
+}
+.contact-form h3 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact-form p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.contact-image {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 90px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.contact-form {
+    flex: 2;
+    min-width: 300px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;    
+}
+
+.contact-form textarea {
+    background-color: #e2d2ea;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #95204e;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #7d90d9;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+/* Info seccion CSS, media queries */
+#info_section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #95204e;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.info-container a {
+    color: inherit;
+    text-decoration: none;
+}
+.info-container a:hover {
+    color: #7d90d9;
+}
+.info-container p {
+    font-size: 18px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.info-container i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-container p {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Footer, estilos */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #500f3b;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.footer-information-section {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;  
+    margin-bottom: 20px;  
+}
+.title-footer {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 10px
+    margin-bottom: 10px;
+    text-align: center;
+}
+.footer-information-section li a {
+    font-family: 'Poppins', serif;
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+.footer-information-section li a:hover {
+    text-decoration: underline;
+    color: #7d90d9;
+}
+.img-footer {
+    text-align: center;
+}
+
+.img-footer img {
+    max-width: 250px;
+}
+.bottom-footer {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
