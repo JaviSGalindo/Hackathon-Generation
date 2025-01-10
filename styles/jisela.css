@@ -66,10 +66,12 @@
 
 .img-box {
     border-radius: 50%;
+    z-index: 10;
     overflow: hidden;
 }
 
 .img-box img {
+    z-index: 10;
     width: 8px;
     height: 8px;
 }
