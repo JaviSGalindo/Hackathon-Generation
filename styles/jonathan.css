@@ -9,7 +9,7 @@
     box-shadow: none;  
 }
 
-/* Navbar styling */
+/* Navbar*/
 .navbar {
     background-color: #F14545 !important; 
     padding: 10px 20px;
@@ -39,30 +39,37 @@
     color: #4c0000;
 }
 
-/* Shopping Cart Icon */
+/*Carrito de compras*/
 .material-icons {
     font-size: 24px;
     color: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/*Hover carrito*/
+.navbar .nav-item .nav-link:hover .material-icons {
+    color: #4c0000; 
+    transform: scale(1.2);
 }
 
 .navbar .nav-item .nav-link {
-    position: relative;  /* Habilita el posicionamiento relativo para el badge */
+    position: relative;
 }
 
-/* Estilo para el badge */
+/*Estilo para el badge*/
 .navbar .nav-item .nav-link .badge {
-    position: absolute;  /* Permite que el badge se posicione sobre el ícono */
-    top: -1px;  /* Ajusta la posición vertical */
-    right: -4px;  /* Ajusta la posición horizontal */
-    padding: 4px 6px;  /* Tamaño del badge */
+    position: absolute;  
+    top: -1px;  
+    right: -4px; 
+    padding: 4px 6px; 
     background-color: #00343D;
-    color: #FA7474;  /* Color del texto */
-    border-radius: 50%;  /* Forma circular */
-    font-size: 11px;  /* Tamaño del texto */
-    font-weight: bold;  /* Negrita */
+    color: #FA7474;  
+    border-radius: 50%;  
+    font-size: 11px;  
+    font-weight: bold;  
 }
 
-/* Responsive Navbar */
+/*Responsive Navbar*/
 @media (max-width: 991px) {
     .navbar-nav .nav-link {
         font-size: 14px;
@@ -83,11 +90,11 @@
 }
 @media (max-width: 991px) {
     .navbar .nav-item .nav-link {
-        padding: 10px 30px;  /* Espaciado ajustado para el menú en responsive */
+        padding: 10px 30px; 
     }
 
     .navbar .nav-item .nav-link .badge {
-        top: -4px;  /* Ajusta la posición para estar más cerca del icono */
-        right: -4px;  /* Ajusta la posición horizontal */
+        top: -4px;  
+        right: -4px; 
     }
 }
