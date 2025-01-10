@@ -13,7 +13,7 @@
 }
 
 .nuestro-equipo{
-    background-image: url(./img/trainer-bg.jpg);
+    background-image: url(../images/trainer-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -23,16 +23,36 @@
 
 .container {
     color: var(--claro);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 80%;
 }
 
-.titulo-equipo {
+
+.titulo-equipo h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 55px;
+    height: 5px;
+    background-color: #ff2953;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.titulo-equipo h2 {
+    font-weight: bold;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
     color: var(--claro);
+
 }
 
 .img-tamano {
@@ -48,3 +68,41 @@
     border-radius: 50%;
     overflow: hidden;
 }
+
+.img-box img {
+    width: 8px;
+    height: 8px;
+}
+
+.name {
+    font-family: 'Poppins', sans-serif;
+}
+
+.name h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+
+
+.box {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 360px;
+    height: 400px;
+}
+
+.social_box {
+    margin-top: 20px;
+    background-color: var(--claro);
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+    padding: 12px 45px;
+    border-radius: 50px;
+    margin-top: -25px;
+}
+
