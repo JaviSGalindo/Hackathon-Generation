@@ -218,7 +218,7 @@ html {
     --claro: #f3f3f3;
 }
 
-.nuestro-equipo{
+.nuestro-equipo {
     background-image: url(../images/trainer-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -232,9 +232,11 @@ html {
     padding-top: 60px;
     padding-bottom: 100px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
+    max-width: 1200px;
 }
 
 
@@ -270,11 +272,6 @@ html {
     border-radius: 50%;
 }
 
-/* .img-box img {
-    width: 100%;
-    height: auto;
-} */
-
 .name {
     font-family: 'Poppins', sans-serif;
 }
@@ -292,8 +289,10 @@ html {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 360px;
-    height: 400px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin-bottom: 40px;
 }
 
 .social_box {
@@ -305,6 +304,26 @@ html {
     padding: 12px 45px;
     border-radius: 50px;
     margin-top: -25px;
+}
+@media (max-width: 768px) {
+    .container-nosotros {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .social_box {
+        width: 180px;
+        padding: 10px 25px;
+    }
+
+    .img-tamano {
+        max-width: 270px;
+    }
 }
 
 /* Fin carrito de compras */
