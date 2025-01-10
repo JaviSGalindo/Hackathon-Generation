@@ -267,18 +267,13 @@ html {
     background-color: var(--claro);
     background-size: cover;
     background-attachment: fixed;
-
-}
-
-.img-box {
     border-radius: 50%;
-    overflow: hidden;
 }
 
-.img-box img {
+/* .img-box img {
     width: 100%;
     height: auto;
-}
+} */
 
 .name {
     font-family: 'Poppins', sans-serif;
