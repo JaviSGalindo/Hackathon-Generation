@@ -1,8 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 :root {
     --darrk: #500f3b;
@@ -23,7 +19,7 @@
 
 .container {
     color: var(--claro);
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 100px;
     display: flex;
     justify-content: space-around;
@@ -47,46 +43,40 @@
 .titulo-equipo h2 {
     font-weight: bold;
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 5px;
+    padding-top: 90px;
     text-transform: uppercase;
     font-family: 'Merriweather', serif;
     color: var(--claro);
 
 }
 
-.img-tamano {
+.img-box {
     width: 320px;
     height: 320px;
     background-color: var(--claro);
-    background-size: cover;
     background-attachment: fixed;
-
-}
-
-.img-box {
     border-radius: 50%;
-    overflow: hidden;
 }
 
-.img-box img {
-    width: 8px;
-    height: 8px;
+.img-tamano {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
 }
+
 
 .name {
     font-family: 'Poppins', sans-serif;
 }
 
 .name h5 {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     margin-bottom: 10px;
 }
 
 
 
 .box {
-    margin-top: 55px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,9 +90,47 @@
     background-color: var(--claro);
     display: flex;
     justify-content: space-between;
-    width: 225px;
+    width: 130px;
     padding: 12px 45px;
     border-radius: 50px;
     margin-top: -25px;
 }
+
+/* responsive */
+
+@media (max-width: 1629px) {
+    .img-box {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .img-tamano {
+        width: 320px;
+        height: 320px;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1399px) {
+    .img-box {
+        width: 260px;
+        height: 260px;
+    }
+    .img-tamano {
+        width: 260px;
+        height: 260px;
+    }
+    
+}
+
+@media (max-width: 1102px) {
+
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
 
