@@ -2,9 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
 /* Navbar Hamburguesa */
 .navbar-toggler {
     border: none;
@@ -218,7 +219,7 @@ html {
     --claro: #f3f3f3;
 }
 
-.nuestro-equipo {
+.nuestro-equipo{
     background-image: url(../images/trainer-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -227,16 +228,14 @@ html {
     flex-direction: column;
 }
 
-.container-nosotros {
+.container-nuestro-equipo {
     color: var(--claro);
     padding-top: 60px;
     padding-bottom: 100px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
+    width: 80%;
 }
 
 
@@ -269,7 +268,17 @@ html {
     background-color: var(--claro);
     background-size: cover;
     background-attachment: fixed;
+
+}
+
+.img-box {
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    height: auto;
 }
 
 .name {
@@ -289,10 +298,8 @@ html {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
-    max-width: 360px;
-    height: auto;
-    margin-bottom: 40px;
+    width: 360px;
+    height: 400px;
 }
 
 .social_box {
@@ -305,24 +312,16 @@ html {
     border-radius: 50px;
     margin-top: -25px;
 }
-@media (max-width: 768px) {
-    .container-nosotros {
+@media (max-width: 1068px) {
+    .container-nuestro-equipo {
         padding-top: 30px;
         padding-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
     }
-
-    .box {
-        width: 100%;
-        max-width: 90%;
-    }
-
     .social_box {
         width: 180px;
         padding: 10px 25px;
-    }
-
-    .img-tamano {
-        max-width: 270px;
     }
 }
 
